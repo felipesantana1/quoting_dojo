@@ -1,0 +1,14 @@
+<h1>Welcome to Quoting Dojo!</h1>
+
+<form action="/quotes" method="post">
+    Your Name: <input type="text" name="name">
+    Your Quote: <textarea name="quote"></textarea>
+    <br>
+    <input type="submit" value="Add My Quote">
+</form>
+
+<a href="/quotes"><button>Skip to Quotes!</button></a>
+
+<% for(error in errors){%>
+    <b><%= errors[error].message %></b>
+<% } %>
